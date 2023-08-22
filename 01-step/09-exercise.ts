@@ -20,7 +20,7 @@ interface IFaqs {
 async function getFaqs(req: IRequest): Promise<IFaqs[]> {
   const res = await fetch('/faqs', {
     method: 'POST',
-    body: JSON.stringify(req)
+    body: JSON.stringify(req),
   });
 
   const data: IFaqs[] = await res.json();
@@ -29,6 +29,6 @@ async function getFaqs(req: IRequest): Promise<IFaqs[]> {
 
 const tempReq: IRequest = {
   topicId: 5,
-}
+};
 
 getFaqs(tempReq);

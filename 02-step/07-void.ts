@@ -18,8 +18,8 @@ const b = f2();
 
 const skills = ['dev', 'devops'];
 const user = {
-  s: ['s']
+  s: ['s'],
 };
-skills.forEach((s) => user.s.push(s))
+skills.forEach((s) => user.s.push(s));
 
 export {};

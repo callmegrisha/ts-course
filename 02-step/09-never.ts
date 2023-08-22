@@ -3,7 +3,7 @@ function generateError(message: string): never {
 }
 
 function dumpError(): never {
-  while(true) {}
+  while (true) {}
 }
 
 function rec(): never {
@@ -14,13 +14,13 @@ type paymentAction = 'refund' | 'checkout' | 'reject';
 
 function proccessAction(action: paymentAction) {
   switch (action) {
-    case "refund":
+    case 'refund':
       // ...
       break;
-    case "checkout":
+    case 'checkout':
       // ...
       break;
-    case "reject":
+    case 'reject':
       // ...
       break;
     default:
@@ -32,7 +32,7 @@ function proccessAction(action: paymentAction) {
 function isString(x: string | number): boolean {
   if (typeof x === 'string') {
     return true;
-  } else if(typeof x  === 'number') {
+  } else if (typeof x === 'number') {
     return false;
   }
   generateError('sss');

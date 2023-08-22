@@ -7,7 +7,7 @@ interface UserPro {
   login: string;
   password?: {
     type: 'primary' | 'secondary';
-  }
+  };
 }
 
 function testPass(user: UserPro) {
@@ -20,13 +20,11 @@ function test(param?: string) {
 
 const user: User = {
   login: 'hryhorii_petrov',
-}
+};
 
 function multiply(first: number, second?: number): number {
   if (!second) return first * first;
   return first * second;
 }
-
-
 
 export {};

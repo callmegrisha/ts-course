@@ -15,7 +15,7 @@ function getUser() {
   } else {
     return {
       name: 'Vas',
-    } as User
+    } as User;
   }
 }
 

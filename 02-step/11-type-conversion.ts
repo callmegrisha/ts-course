@@ -15,7 +15,7 @@ interface User {
 const user: User = {
   name: 'Vasya',
   email: 'vasiliy@yandex.ru',
-  login: 'callmevasya'
+  login: 'callmevasya',
 };
 
 interface Admin {
@@ -32,7 +32,7 @@ function userToAdmin(user: User): Admin {
   return {
     name: user.name,
     role: 1,
-  }
+  };
 }
 
 export {};

@@ -1,6 +1,6 @@
 function logId(id: number | string | boolean): void {
   if (typeof id === 'string') {
-    console.log(id.toUpperCase())
+    console.log(id.toUpperCase());
   } else if (typeof id === 'number') {
     console.log(id.toFixed());
   } else {
@@ -11,7 +11,7 @@ function logId(id: number | string | boolean): void {
 
 function logError(err: string | string[]): void {
   if (Array.isArray(err)) {
-    console.log(err.map(err => err));
+    console.log(err.map((err) => err));
   } else {
     console.log(err.toUpperCase());
   }
@@ -31,6 +31,6 @@ function logMultipleIds(a: string | number, b: string | boolean): void {
   } else if (typeof a === 'number') {
     console.log(a.toFixed());
   } else if (typeof b === 'boolean') {
-    console.log(b.valueOf())
+    console.log(b.valueOf());
   }
 }
